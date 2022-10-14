@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>IMC</title>
+</head>
+
+<body>
+  <div class="container-global">
+    <div class="container-left">
+      <div>
+        <h1>Calcule seu IMC</h1>
+      </div>
+      <div class="input">
+        <label for="">Peso (Kg) </label>
+        <input class="peso" type="number" placeholder="Seu Peso em quilogramas" required>
+      </div>
+      <div class="input">
+        <label>Altura (m)</label>
+        <input class="altura" type="number" placeholder="Sua altura em metros" required>
+      </div>
+      <div class="input">
+        <label for="">Sexo</label>
+        <div>
+          <select class="sexo" required >
+            <option value="Feminino"selected>Feminino</option>
+            <option value="Masculino">Masculino</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <button class="calcular" type="submit" onclick="Calcular()">Calcular</button>
+      </div>
+    </div>
+    <div class="container-right">
+      <div>
+        <h3>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</h3>
+      </div>
+      <div>
+        <img class="image" src="assets/imgs/icon.png" alt="imagem">
+      </div>
+      <div>
+        <span class="resultadoNum"></span>
+      </div>
+      <div>
+        <span class="resultadoTexto"></span>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

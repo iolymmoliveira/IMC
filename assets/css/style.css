@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/gotham.otf') format('opentype');
+}
+
+:root {
+  --color1: rgb(255, 255, 255);
+  --color2: rgb(5, 10, 38);
+  --color3: rgb(231, 0, 76);
+}
+
+body {
+  background-color: var(--color2);
+  font-family: 'Gotham', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.container-global {
+  height: 500px;
+  width: 90%;
+  background-color: var(--color3);
+  border-radius: 15px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  margin-top: 2.5%;
+}
+
+.container-left, .container-right {
+  background-color: white;
+  height: 90%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-left {
+  width: 40%;
+}
+
+.container-left div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.container-left div h1{
+  align-self: center;
+}
+
+.input label {
+  padding-bottom: 10px;
+}
+
+.input input, select {
+  border: 1px solid var(--color3);
+  font-size: 0.8rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.input div {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+option {
+  background-color: rgba(247, 181, 208, 0.801);
+  color: var(--color2);
+}
+
+div button {
+  width: 50%;
+  align-self: center;
+}
+
+button {
+  background-color: var(--color2);
+  padding: 15px;
+  border-radius: 5px;
+  color: var(--color1);
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: linear-gradient(to right, rgb(5, 10, 38), rgb(231, 0, 76),  rgb(5, 10, 38));
+  cursor: pointer;
+}
+
+.container-right {
+  width: 50%;
+  padding: 25px;
+}
+
+.container-right img {
+  height: 320px;
+}
+
+.resultadoNum {
+  font-size: 2.5rem;
+}
+
+.resultadoTexto {
+  font-size: 1.1rem;
+}
