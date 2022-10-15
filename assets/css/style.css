@@ -13,7 +13,6 @@
   --color1: rgb(255, 255, 255);
   --color2: rgb(5, 10, 38);
   --color3: rgb(231, 0, 76);
-  --color4: rgb(81, 243, 81);
 }
 
 body {
@@ -121,10 +120,37 @@ button:hover {
 .container-right img {
   height: 320px;
 }
+
 #resultadoNum {
   font-size: 2.5rem;
 }
 
 #resultadoTexto {
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 660px) and (max-width: 768px) {
+  .container-global {
+    height: 95vh;
+  }
+  div button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-global {
+    height: 98%;
+    flex-direction: column;
+  }
+  .container-left, .container-right {
+    height: 500px;
+    width: 90%;
+  }
+  .container-left {
+    margin-bottom: 15px;
+  }
+  .input label, .input input, select {
+    font-size: 1.25rem;
+  }
 }

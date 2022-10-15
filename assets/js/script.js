@@ -2,7 +2,7 @@
 const calcular = document.getElementById('calcular');
 
 function calcIMC() {
-  /*Pegar os dados nos inputs e armazenar em uma variável*/
+  /*Pega os dados nos inputs e armazenar em uma variável*/
   const select = document.getElementById('sexo');
   const peso = document.getElementById('peso').value;
   const altura = document.getElementById('altura').value;
@@ -29,7 +29,7 @@ function calculaIMCeValidaInputs() {
       } else {
         img.src = 'assets/imgs/clancy-simpson.png';
       }
-      texto = 'Peso Pesadoo!';
+      texto = 'Cuidado! Peso Pesadoo!!!!';
       document.querySelector('.container-right').style.backgroundColor = 'rgba(245, 35, 35, 0.986)';
     }
     else if (resultadoIMC >= 25) {
@@ -41,7 +41,7 @@ function calculaIMCeValidaInputs() {
       texto = 'Táa gordinhooo(aaa)!';
       document.querySelector('.container-right').style.backgroundColor = 'rgb(255, 255, 0)';
     }
-    else if (resultadoIMC >= 19) {
+    else if (resultadoIMC >= 18.5) {
       if (sexo.value == 'Feminino') {
         img.src = 'assets/imgs/marge-simpson.png';
       } else {
