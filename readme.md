@@ -1,7 +1,7 @@
 # Calculadora de IMC - Índice de Massa Corporal
 
 ## Descrição
-Em uma aula de Laboratório de Hardware e Sistemas o professor exemplificou um determinado tema com um programinha em JavaScript que realizava o cálculo de IMC. </br>Com base na ideia inicial eu quis desenvolver este programinha de forma divertida.
+Em uma aula de Laboratório de Hardware e Sistemas o professor exemplificou um determinado tema com um programinha em JavaScript que realizava o cálculo de IMC. </br>Com base na ideia inicial eu quis desenvolver este programinha de forma divertida e simplificada.
 </br>
 
 ## Objetivo
@@ -18,6 +18,15 @@ Em uma aula de Laboratório de Hardware e Sistemas o professor exemplificou um d
 </br>
 
 ## Detalhes
+
+<p>:iphone:</p>
+<p>
+  <img src="assets/imgs/computer.gif">
+</p>
+</br>
+<p align= "center">
+  <img src="assets/imgs/iphone.gif"></br>
+</p>
 
 <p>:computer:</p>
 <p>Tela Inicial da Calculador de IMC</p>

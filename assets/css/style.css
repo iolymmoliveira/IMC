@@ -129,28 +129,65 @@ button:hover {
   font-size: 1.1rem;
 }
 
-@media screen and (min-width: 660px) and (max-width: 768px) {
+@media (max-width: 834px) {
   .container-global {
-    height: 95vh;
+    height: 100%;
+    flex-direction: column;
+  }
+  .container-left, .container-right {
+    width: 98%;
+    padding: 10px;
+  }
+  .container-left {
+    height: 500px;
+    margin-bottom: 15px;
+  }
+  .container-right{
+    height:600px;
   }
   div button {
     width: 70%;
   }
+  .input label, div>button {
+    padding-top: 10px;
+  }
+  .input label, .input input, select, #resultadoTexto {
+    font-size: 1.525rem;
+  }
+  h3 {
+    font-size: 1.325rem;
+    padding: 0 10px 0 10px;
+  }
+  #resultadoNum {
+    font-size: 3.25rem;
+  }
+  .container-right img {
+    height: 330px;
+  }
 }
 
-@media (max-width: 768px) {
-  .container-global {
-    height: 98%;
-    flex-direction: column;
-  }
+@media (max-width: 375px) {
   .container-left, .container-right {
-    height: 500px;
-    width: 90%;
+    width: 100%;
+    padding: 0 0 10px 0;
   }
   .container-left {
+    height: 450px;
     margin-bottom: 15px;
   }
+  .container-right{
+    height:550px;
+  }
   .input label, .input input, select {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .container-right img {
+    height: 280px;
+  }
+  div button {
+    width: 90%;
   }
 }
